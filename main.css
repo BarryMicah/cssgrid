@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    text-align:center;
+}
+header{
+    animation-name: micah;
+    animation-duration: 11s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+
+}
+@keyframes micah{
+    0%{background-color:red;}
+    25%{background-color:rgb(161, 151, 151);}
+    75%{background-color:blue;}
+    100%{background-color:yellow;}
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container > div{
+    flex: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    text-transform: uppercase;
+}
+.item-1{
+    background: url("./product-1.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.item-2{
+    background-color: red;
+}
+.item-3{
+    background-color: green;
+}
+.item-4{
+    background-color: yellow;
+}
+.item-5{
+    background-color: aqua;
+}
+.item-6{
+    background-color: purple;
+}
+.item-7{
+    background-color: grey;
+}
+.item-8{
+    background-color: coral
+}
+.item-9{
+    background-color: indianred;
+}
+.item-10{
+    background-color: darkred;
+}
+@media screen and (min-width:586px){
+
+    .container{
+        display: grid;
+        height: 100vh;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "one one two four three"
+        "one one two five five"
+        "six seven seven five five"
+        "six eight nine nine ten"
+    }
+    .item-1{
+        grid-area: one;
+        background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("./product-1.jpeg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        font-size: 50px;
+    }
+    .item-2{
+        grid-area: two;
+        background-image: linear-gradient(20 deg,rgba(0,0,0,0.3),rgba(214, 23, 23, 0.3)),
+    }
+    .item-3{
+        grid-area: three;
+        background-image: url('Ranch\ House.jpg');
+        background-position:center;
+    }
+    .item-4{
+        grid-area: four;
+        background-image:url('peppers.jpg');
+        background-size: cover;
+        background-position:center;
+    }
+    .item-5{
+        grid-area: five;
+        background-image:url('Pasta.jpg');
+        background-size: cover;
+        background-position:center;
+    }
+    .item-6{
+        grid-area: six;
+        background-color: purple;
+    }
+    .item-7{
+        grid-area: seven;
+        background-color: gray;
+    }
+    .item-8{
+        grid-area: eight;
+        background-color: coral;
+    }
+    .item-9{
+        grid-area: nine;
+        background-color: indianred;
+    }
+    .item-10{
+        grid-area: ten;
+        background-color: darkred;
+    }
+    h1{
+        text-align:center;
+    }
+    header{
+        animation-name: micah;
+        animation-duration: 11s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+    
+    }
+    @keyframes micah{
+        0%{background-color:red;}
+        25%{background-color:rgb(161, 151, 151);}
+        75%{background-color:blue;}
+        100%{background-color:yellow;}
+    }
+}
